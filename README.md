@@ -1,11 +1,29 @@
-<div align="center">
+# LuminaBook PDF Flipbook
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+이 프로젝트는 PDF 파일을 몰입감 있는 3D 플립북 형태로 보여주는 웹 애플리케이션입니다.
 
-  <h1>Built with AI Studio</h2>
+## 로컬 실행 방법
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+이 프로젝트는 React와 Vite를 사용하므로, `index.html` 파일을 직접 더블 클릭해서 열면 작동하지 않습니다. 아래 단계에 따라 로컬 개발 서버를 실행해야 합니다.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### 1. Node.js 설치
+컴퓨터에 [Node.js](https://nodejs.org/)가 설치되어 있어야 합니다. (LTS 버전 권장)
 
-</div>
+### 2. 의존성 패키지 설치
+터미널(명령 프롬프트)을 열고 프로젝트 폴더로 이동한 후 다음 명령어를 입력합니다:
+```bash
+npm install
+```
+
+### 3. 개발 서버 실행
+설치가 완료되면 다음 명령어를 입력하여 서버를 실행합니다:
+```bash
+npm run dev
+```
+
+### 4. 브라우저 접속
+터미널에 표시된 주소(보통 `http://localhost:3000`)를 브라우저 주소창에 입력하여 접속합니다.
+
+## 다운로드 오류 해결 안내 (0x80070057)
+
+윈도우 환경에서 다운로드 시 발생하던 `0x80070057` 오류는 파일명에 포함된 콜론(`:`) 문자 때문이었습니다. 현재 모든 파일명에서 해당 문자를 제거하여 오류를 해결했습니다.
