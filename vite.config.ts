@@ -15,8 +15,8 @@ export default defineConfig(({ mode }) => {
         port: 3000,
         host: '0.0.0.0',
       },
-      // GitHub Pages 배포 시 상대 경로를 사용하도록 설정
-      base: './',
+      // 개발 서버 및 일반적인 배포 환경을 위해 base를 /로 설정
+      base: '/',
       plugins: [
         react(),
         tailwindcss(),
