@@ -10,10 +10,12 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
     "lucide-react": "^0.562.0",
     "pdfjs-dist": "5.5.207",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
+    "tailwindcss": "^4.2.1",
     "vite-plugin-pwa": "^1.2.0"
   },
   "devDependencies": {

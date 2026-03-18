@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#08090b">
     <meta name="description" content="Interactive 3D PDF Flipbook Reader">
     <title>LuminaBook - Immersive PDF Reader</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,7 +33,17 @@
     </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <div id="root">
+        <div style="display: flex; height: 100vh; width: 100%; align-items: center; justify-content: center; background-color: #08090b; color: #6366f1; font-family: sans-serif;">
+            <div style="text-align: center;">
+                <div style="width: 40px; height: 40px; border: 3px solid rgba(99, 102, 241, 0.2); border-top-color: #6366f1; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px;"></div>
+                <p style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Initializing LuminaBook...</p>
+            </div>
+        </div>
+        <style>
+            @keyframes spin { to { transform: rotate(360deg); } }
+        </style>
+    </div>
+    <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
