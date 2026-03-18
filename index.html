@@ -38,12 +38,22 @@
             <div style="text-align: center;">
                 <div style="width: 40px; height: 40px; border: 3px solid rgba(99, 102, 241, 0.2); border-top-color: #6366f1; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px;"></div>
                 <p style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">Initializing LuminaBook...</p>
+                <div id="error-display" style="margin-top: 20px; color: #ef4444; font-size: 12px; max-width: 300px; word-break: break-all;"></div>
             </div>
         </div>
         <style>
             @keyframes spin { to { transform: rotate(360deg); } }
         </style>
+        <script>
+            window.onerror = function(msg, url, line, col, error) {
+                var display = document.getElementById('error-display');
+                if (display) {
+                    display.innerHTML = 'Error: ' + msg + '<br>Line: ' + line + ':' + col;
+                }
+                return false;
+            };
+        </script>
     </div>
-    <script type="module" src="/src/index.tsx"></script>
+    <script type="module" src="src/index.tsx"></script>
 </body>
 </html>

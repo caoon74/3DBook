@@ -6,6 +6,7 @@ import { loadPdfPages } from './services/pdfService';
 import Reader from './components/Reader';
 
 const App: React.FC = () => {
+  console.log('LuminaBook: App component rendering');
   const [state, setState] = useState<AppState>(AppState.IDLE);
   const [pages, setPages] = useState<PageData[]>([]);
   const [metadata, setMetadata] = useState<BookMetadata | null>(null);
